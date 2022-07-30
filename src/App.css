@@ -1,38 +1,296 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #0f0f0f;
+  color: #f3f3f3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* CATEGORIAS */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.categoria-lista {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  top: 50px; 
+}
+
+.categoria-lista:hover .botao-lista{
+  display: block;
+  transition: ease .2s;
+}
+
+.categoria-titulo{
+  margin-left: 4.4rem;
+}
+
+.imagens1{
+  margin-left: 2px
+}
+
+.categoria-lista img{
+  height: 16rem;
+  transform: scale(0.9);
+  transition: ease .2s;
+
+}
+
+.categoria-lista img:hover{
+  transform: scale(1);
+  transition: .2s;
+}
+
+/* FIM DAS CATEGORIAS */
+
+
+/* BOTAO DAS CATEGORIAS */
+.botao-lista{
+  display: none;
+  position: absolute;
+  align-items:center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 14.5rem;
+  margin-top: 13px;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: ease .2s;
 }
 
-.App-link {
-  color: #61dafb;
+.botao-lista:hover{
+  background-color: rgba(0, 0, 0, 0.10);
+  transition: ease .2s;
+  transform: scale();
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categoria-esquerda{
+  left: 0;
+}
+
+.categoria-direita{
+  right: 0;
+}
+
+.icone {
+  transform: scale(0.9);
+  transition: ease 0.2s;
+}
+
+.icone:hover {
+  transform: scale(1.2);
+}
+
+/* FIM DO BOTAO DAS CATEGORIAS */
+
+/* HEADER */
+.header-fixed{
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2.5rem;
+  z-index: 999;
+}
+
+.header-logo{
+  position: fixed;
+  top: 30px;
+  left: 74px;
+  width: 120px;
+  object-fit: contain;
+}
+
+.header-logo-login{
+  position: fixed;
+  top: 25px;
+  right: 75px;
+  width: 2.6rem;
+  object-fit: contain;
+  cursor: pointer;
+}
+/* FIM DO HEADER */
+
+/* INFO FILME BANNER */
+
+.botao-banner{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f3f3f3;
+  display: flex;
+  padding: 5px 5px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: ease .2s
+}
+
+.botao-banner:hover{
+  background-color: #a19f9f;
+  transition: ease .2s;
+}
+
+.texto-banner{
+  display: flex;
+  font-size: 15px;
+  overflow-wrap: break-word;
+  font-weight: 200;
+  text-align: left;
+  padding-right: 50rem;
+
+}
+
+/* FIM DO INFO BANNER */
+
+/* PAGINA LOGIN */
+
+
+.header-login-logo{
+  display: flex;
+  position: fixed;
+  top: 0;
+  let: 40px;
+  width: 20rem;
+  padding: 2.5rem;
+  z-index: 999;
+}
+
+.login-container h2{
+  font-size: 32px;
+  margin-top: 0;
+  color: #f3f3f3;
+  margin-bottom: 20px;
+}
+
+.login-container input{
+  height: 50px;
+  width: 100%;
+  color: #f3f3f3;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.login-container input:hover{
+  background-color: #444;
+}
+
+.input-box{
+  margin-bottom: 15px;
+}
+
+.submit{
+  height: 50px;
+  width: 100%;
+  color: #f3f3f3;
+  background-color: #e50914;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.submit:hover{
+  background-color: #5c0408;
+}
+
+.support-container{
+  display: flex;
+  color: #f3f3f3;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.support-container input{
+  width: 15px;
+  height: 15px;
+}
+
+.login-remember{
+  display: flex;
+  align-items: center;
+}
+
+.login-remember span{
+  margin-right: 5px;
+  height: 25px;
+}
+
+.help a{
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.help a:hover{
+  text-decoration: underline;
+}
+
+.login-signup{
+  color: #666;
+  font-seize: 15px;
+  margin-top: 3rem;
+}
+
+.login-signup a{
+  color: #f3f3f3;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.login-signup a:hover{
+  text-decoration: underline;
+}
+
+.login-terms{
+  color: #737373;
+  font-size: 13px;
+  margin-top: 1rem;
+}
+
+.login-terms a{
+  text-decoration: none;
+  color: #0071eb;
+}
+
+.login-terms a:hover{
+  text-decoration: underline;
+}
+
+/* FIM DA PAGINA LOGIN */
+
+/* PAGINA FILME */
+
+.movie-container{
+  width: 50rem;
+  height: 55rem;
+  background-color: #0f0f0f ;
+}
+
+.movie-container h1{
+  margin-left: 40px;
+}
+
+.movie-container p{
+  width: 40rem;
+  margin-left: 40px;
+}
+
+.movie-titulo{
+  display: flex;
 }
