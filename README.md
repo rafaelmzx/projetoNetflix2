@@ -2,7 +2,7 @@
 
 Projeto criado com a api da [TMDB](https://www.themoviedb.org/?language=pt-BR) com ajuda de comunidades e muita ajuda do professor [Leandro](https://github.com/LeandroSpohr) fiz esse projeto.
 
-Você pode abrir o projeto com o link do github pages e veja como o projeto ficou, se sinta livre para editar e codar o seu projeto  -> (https://rafaelmzx.github.io/projetoNetflix)
+Você pode abrir o projeto com o link do github pages e veja como o projeto ficou, se sinta livre para editar e codar o seu projeto  -> (https://rafaelmzx.github.io/projetoNetflix2)
 
 ---
 
